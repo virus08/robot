@@ -1,0 +1,44 @@
+{
+  "name": "person",
+  "plural": "people",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Position": {
+      "type": "string"
+    },
+    "Department": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Contact": {
+      "type": "string"
+    },
+    "HireDate": {
+      "type": "date"
+    },
+    "Created": {
+      "type": "date",
+      "required": true
+    },
+    "Modified": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
