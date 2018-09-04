@@ -9,6 +9,10 @@ module.exports = function(server) {
   router.get('/ping', function(req, res) {
     res.send('pongaroo');
   });
+  router.get('/link/:id', function(req, res) {
+    // console.log('Request Type:', req.method);
+    res.send(req.params.id);
+  });
   server.use(router);
 };
 

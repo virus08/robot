@@ -3,79 +3,97 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>INSPINIA | Register</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/app.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
   <style>
     [v-cloak] {
       display: none;
     }
-    </style>
+
+  </style>
 </head>
 
-<body>
+<body class="gray-bg">
 
-  <div id="catApp" v-cloak>
 
-    <h1>Cats</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Gender</th>
-          <th>Breed</th>
-          <td>&nbsp;</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="cat in cats">
-          <td @click="editCat(cat)" class="catItem" title="Click to Edit">{{cat.name}}</td>
-          <td>{{cat.age}}</td>
-          <td>{{cat.gender}}</td>
-          <td>{{cat.breed}}</td>
-          <td @click="deleteCat(cat)" class="deleteCat" title="Click to Delete">Delete</td>
-        </tr>
-      </tbody>
-    </table>
 
-    <form @submit.prevent="storeCat">
-      <p>
-        <label for="name">Name Sername</label>
-        <input type="text" id="name" v-model="cat.name">
-      </p>
-      <p>
-        <label for="Email">Email address</label>
-        <input type="number" id="Email" v-model="cat.Email">
-      </p>
-      <p>
-        <label for="Position">Position</label>
-        <input type="text" id="Position" v-model="cat.Position">
-      </p>
-      <p>
-        <label for="Department">Gender</label>
-        <input type="text" id="Department" v-model="cat.Department">
-      </p>
-      <p>
-        <label for="Address">Gender</label>
-        <input type="text" id="Address" v-model="cat.Address">
-      </p>
-      <p>
-        <label for="Contact">Gender</label>
-        <input type="text" id="Contact" v-model="cat.Contact">
-      </p>
-      <p>
-        <label for="HireDate">Gender</label>
-        <input type="date" id="HireDate" v-model="cat.HireDate">
-      </p>
 
-      <input type="reset" value="Clear" @click="reset">
-      <input type="submit" value="Save Cat 🐱">
-    </form>
+  <div id="catApp">
+    <div>
+
+      <h1 class="logo-name text-center">DELL</h1>
+
+    </div>
+    <div class="ibox-content">
+      <form @submit.prevent="storeCat" role="form">
+        <div class="row text-center">
+          <h1> Registration Form</h1>
+
+          <div class="col-sm-6 b-r">
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="name">Name Surname</label>
+              <div class="col-sm-9">
+                <input type="text" id="name" class="form-control" placeholder="Name Surname" required v-model="cat.name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="Email address">Email address</label>
+              <div class="col-sm-9">
+                <input type="email" id="Email" class="form-control" placeholder="name@company.com" required v-model="cat.Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="Position">Position</label>
+              <div class="col-sm-9">
+                  <input type="text" id="Position" class="form-control" placeholder="Position"  v-model="cat.Position">
+              </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="Department">Department</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Department" class="form-control" placeholder="Department" v-model="cat.Department">
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="Address">Address</label>
+                <div class="col-sm-9">
+                    <textarea type="text" row="2" id="Address" class="form-control" placeholder="Address" v-model="cat.Address"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="Contact">Contact</label>
+                <div class="col-sm-9">
+                    <textarea type="text" row="2" id="Contact" class="form-control" placeholder="Contact" v-model="cat.Contact"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="HireDate">HireDate</label>
+                <div class="col-sm-9">
+                    <input type="date" id="HireDate" class="form-control" placeholder="HireDate" v-model="cat.HireDate">
+                </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row form-group text-right ">
+            <input type="reset" value="Clear" @click="reset">
+            <input type="submit" value="Save">
+          </div>
+      </form>
+    </div>
+
   </div>
 
-  <script src="https://unpkg.com/vue"></script>
+  <script src="js/vue.js"></script>
   <script src="js/app.js"></script>
 </body>
 

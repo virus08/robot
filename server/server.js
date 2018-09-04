@@ -5,6 +5,20 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+var path = require('path');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+app.get('/email/:id', function(req, res, next) {
+  res.render('index', {
+    site:{
+      title:"test",
+    },
+    id: req.params.id,
+  });
+  // res.redirect('/');
+});
+
 app.start = function() {
   // start the web server
   return app.listen(function() {

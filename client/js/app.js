@@ -1,9 +1,27 @@
 const API = 'http://localhost:8081/api/people';
 
+Vue.component('test',{
+	props: ['xid'],
+	template:'<div>{{xid}}</div>'
+	
+});
+
 let catApp = new Vue({
-	el:'#catApp',
+	el:'#wrapper',
 	data:{
 		cats:[],
+		tmp:{
+			id:'',
+			name:'',
+			Email:'',
+			Position:'',
+			Department:'',
+			Address: '',
+			Contact: '',
+			HireDate : '',
+			Created : Date.now(),
+			Modified : Date.now()
+		},
 		cat:{
 			id:'',
 			name:'',
@@ -45,43 +63,18 @@ let catApp = new Vue({
 			})
 			.then(res => res.json())
 			.then(res => {
-				this.getCats();
+				//this.getCats();
+				this.sentmail();
 				this.reset();
 			});
 		},
-		deleteCat:function(c) {
-			fetch(API + c.id, {
-				headers:{
-					'Content-Type':'application/json'
-				},
-				method:'DELETE'
-			})
-			.then(res => res.json())
-			.then(res => {
-				this.getCats();
-			});
-
-			// call reset cuz the cat could be 'active'
-			this.reset();
-		},
-		editCat:function(c) {
-			/*
-			This line was bad as it made a reference, and as you typed, it updated
-			the list. A user may think they don't need to click save.
-			this.cat = c;
-			*/
-			this.cat.id = c.id;
-			this.cat.name = c.name;
-			this.cat.age = c.age;
-			this.cat.breed = c.breed;
-			this.cat.gender = c.gender;
+		sendmail:function(){
+			console.log(this.cat)
 		},
 		reset:function() {
-			this.cat.id = '';
-			this.cat.name = '';
-			this.cat.age = '';
-			this.cat.breed = '';
-			this.cat.gender = '';
+			this.tmp.created= Date.now();
+			this.tmp.Modified = Date.now();
+			this.cat=this.tmp;
 		}
 	}
 });
