@@ -5,7 +5,7 @@
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "person": 3,
+    "person": 9,
     "data": 1
   },
   "models": {
@@ -16,7 +16,13 @@
     "Role": {},
     "person": {
       "1": "{\"name\":\"Wanchai Fuangmali\",\"Email\":\"fuangmali@gmail.com\",\"Position\":\"Pre-Sales\",\"Department\":\"Enterprise System\",\"Address\":\"3276/202\\nซิตี้วิลล่า\",\"Contact\":\"\",\"HireDate\":\"2018-09-04T00:00:00.000Z\",\"Created\":\"2018-09-04T11:13:50.662Z\",\"Modified\":\"2018-09-04T11:13:50.662Z\",\"id\":1}",
-      "2": "{\"name\":\"Mangngo Waaa\",\"Email\":\"wanchai@vstecs.com\",\"Position\":\"Pre-Sales\",\"Department\":\"aa\",\"Address\":\"aaa\",\"Contact\":\"a\",\"HireDate\":\"2018-09-05T00:00:00.000Z\",\"Created\":\"2018-09-04T11:34:53.136Z\",\"Modified\":\"2018-09-04T11:34:53.136Z\",\"id\":2}"
+      "2": "{\"name\":\"Mangngo Waaa\",\"Email\":\"wanchai@vstecs.com\",\"Position\":\"Pre-Sales\",\"Department\":\"aa\",\"Address\":\"aaa\",\"Contact\":\"a\",\"HireDate\":\"2018-09-05T00:00:00.000Z\",\"Created\":\"2018-09-04T11:34:53.136Z\",\"Modified\":\"2018-09-04T11:34:53.136Z\",\"id\":2}",
+      "3": "{\"name\":\"Wanchai Fuangmali\",\"Email\":\"fuangmali@gmail.com\",\"Position\":\"Pre-Sales\",\"Department\":\"Enterprise System\",\"Address\":\"3276/202\\nซิตี้วิลล่า\",\"Contact\":\"\",\"HireDate\":\"2018-09-05T00:00:00.000Z\",\"Created\":\"2018-09-04T11:43:39.908Z\",\"Modified\":\"2018-09-04T11:43:39.908Z\",\"id\":3}",
+      "4": "{\"name\":\"Wanchai Fuangmali\",\"Email\":\"fuangmali@gmail.com\",\"Position\":\"Pre-Sales\",\"Department\":\"Enterprise System\",\"Address\":\"3276/202\\nซิตี้วิลล่า\",\"Contact\":\"\",\"HireDate\":\"2018-09-04T00:00:00.000Z\",\"Created\":\"2018-09-04T12:36:53.358Z\",\"Modified\":\"2018-09-04T12:36:53.358Z\",\"id\":4}",
+      "5": "{\"name\":\"Wanchai Fuangmali\",\"Email\":\"fuangmali@gmail.com\",\"Position\":\"Pre-Sales\",\"Department\":\"Enterprise System\",\"Address\":\"3276/202\\nซิตี้วิลล่า\",\"Contact\":\"\",\"HireDate\":\"2018-09-05T00:00:00.000Z\",\"Created\":\"2018-09-04T12:39:42.376Z\",\"Modified\":\"2018-09-04T12:39:42.376Z\",\"id\":5}",
+      "6": "{\"name\":\"Wanchai Fuangmali\",\"Email\":\"fuangmali@gmail.com\",\"Position\":\"Pre-Sales\",\"Department\":\"Enterprise System\",\"Address\":\"3276/202\\nซิตี้วิลล่า\",\"Contact\":\"test\",\"HireDate\":\"2018-09-12T00:00:00.000Z\",\"Created\":\"2018-09-04T12:41:18.515Z\",\"Modified\":\"2018-09-04T12:41:18.515Z\",\"id\":6}",
+      "7": "{\"name\":\"Wanchai Fuangmali\",\"Email\":\"wanchai@vstecs.co.th\",\"Position\":\"Pre-Sales\",\"Department\":\"Enterprise System\",\"Address\":\"3276/202\\nซิตี้วิลล่า\",\"Contact\":\"\",\"HireDate\":\"2018-09-05T00:00:00.000Z\",\"Created\":\"2018-09-04T12:41:31.378Z\",\"Modified\":\"2018-09-04T12:41:31.378Z\",\"id\":7}",
+      "8": "{\"name\":\"Wanchai Fuangmali\",\"Email\":\"wanchai@vstecs.co.th\",\"Position\":\"Pre-Sales\",\"Department\":\"Enterprise System\",\"Address\":\"3276/202\\nซิตี้วิลล่า\",\"Contact\":\"\",\"HireDate\":\"2018-09-05T00:00:00.000Z\",\"Created\":\"2018-09-04T12:45:10.959Z\",\"Modified\":\"2018-09-04T12:45:10.959Z\",\"id\":8}"
     },
     "data": {}
   }

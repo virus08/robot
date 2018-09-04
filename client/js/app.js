@@ -60,7 +60,8 @@ let catApp = new Vue({
 				//this.getCats();
 				this.sendmail();
 				this.reset();
-				window.location.assign("/")
+				let redirect = "/sentemail/"+res.Email+"/"+res.id
+				window.location.assign(redirect)
 			});
 		},
 		sendmail:function(){

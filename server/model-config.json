@@ -42,5 +42,8 @@
   "data": {
     "dataSource": "db",
     "public": true
+  },
+  "Email": {
+    "dataSource": "myEmailDataSource"
   }
 }
