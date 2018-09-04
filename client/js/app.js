@@ -1,4 +1,4 @@
-const API = 'http://localhost:8081/api/people';
+const API = 'http://client.fuangmali.info:8081/api/people';
 
 let catApp = new Vue({
 	el:'#catApp',
