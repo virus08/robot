@@ -1,7 +1,52 @@
 const API = 'http://localhost:8081/api/people';
+/*
+var qrcode = new window.QRCode(document.getElementById("qrcode"), {
+	width : 500,
+	height : 500
+});
+*/
+Vue.component(VueQrcode.name, VueQrcode); 
+
+
+Vue.component('test', { 
+	props: ['xid'],
+	template: `
+	<div>
+		<qrcode :value="name" :options="{ size: 200 }"></qrcode>
+	</div>
+		`,
+	data: function () {
+	   return {
+		   name: "Error",
+		   list:[]
+	   }
+	 },
+	 methods: {
+		 getUsers: function(){
+			let method='GET';
+			let xAPI = API+'/'+this.xid
+			fetch(xAPI, {
+				headers:{
+					'Content-Type':'application/json'
+				},
+				method:method,
+			})
+			.then(res => res.json())
+			.then(res => {
+				if (res.name){
+					this.name=res.name;
+				}
+				
+			});
+		   }
+	   },
+	   mounted: function () {
+		   this.getUsers();
+	   }
+   })
 
 let catApp = new Vue({
-	el:'#catApp',
+	el:'#wrapper',
 	data:{
 		cats:[],
 		tmp:{
@@ -58,9 +103,8 @@ let catApp = new Vue({
 			.then(res => res.json())
 			.then(res => {
 				//this.getCats();
-				this.sendmail();
+				this.sentmail();
 				this.reset();
-				window.location.assign("/")
 			});
 		},
 		sendmail:function(){
@@ -73,3 +117,4 @@ let catApp = new Vue({
 		}
 	}
 });
+
