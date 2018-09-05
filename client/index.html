@@ -64,23 +64,25 @@
           </div>
           <div class="col-sm-6">
             <div class="form-group">
-                <label class="col-sm-3 control-label" for="Address">Address</label>
+                <label class="col-sm-3 control-label" for="Contact">Tel.No.</label>
                 <div class="col-sm-9">
-                    <textarea type="text" row="2" id="Address" class="form-control" placeholder="Address" v-model="cat.Address"></textarea>
+                    <input type="text" data-mask="(999) 999-9999"  id="Contact" class="form-control" placeholder="เบอร์โทรศัพท์" v-model="cat.Contact">
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-3 control-label" for="Contact">Contact</label>
+                <label class="col-sm-3 control-label" for="Address">Address</label>
                 <div class="col-sm-9">
-                    <textarea type="text" row="2" id="Contact" class="form-control" placeholder="Contact" v-model="cat.Contact"></textarea>
+                    <textarea type="text" rows="4" id="Address" class="form-control" placeholder="Address" v-model="cat.Address"></textarea>
                 </div>
             </div>
+            
+            <!--
             <div class="form-group">
                 <label class="col-sm-3 control-label" for="HireDate">HireDate</label>
                 <div class="col-sm-9">
                     <input type="date" id="HireDate" class="form-control" placeholder="HireDate" v-model="cat.HireDate">
                 </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <br>

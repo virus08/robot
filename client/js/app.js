@@ -12,7 +12,7 @@ let catApp = new Vue({
 			Department:'',
 			Address: '',
 			Contact: '',
-			HireDate : '',
+			HireDate : Date.now(),
 			Created : Date.now(),
 			Modified : Date.now()
 		},
@@ -24,7 +24,7 @@ let catApp = new Vue({
 			Department:'',
 			Address: '',
 			Contact: '',
-			HireDate : '',
+			HireDate : Date.now(),
 			Created : Date.now(),
 			Modified : Date.now()
 		}

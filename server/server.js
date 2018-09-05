@@ -26,9 +26,9 @@ app.get('/sentemail/:email/:id', function(req, res, next) {
   
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"Fred Foo 👻" <es.vstecs@gmail.com>', // sender address
+        from: '"Robot 🗿" <es.vstecs@gmail.com>', // sender address
         to: req.params.email, // list of receivers
-        subject: 'สวัสดีครับ Email จาก Robot ✔', // Subject line
+        subject: 'สวัสดีครับ Email จาก Robot 🗿', // Subject line
         text: 'คุณสามารเข้า Link QR Code ที่ http://client.fuangmali.info:8081/email/'+req.params.id, // plain text body
         html: '<b>คุณสามารเข้า Link QR Code ที่ http://client.fuangmali.info:8081/email/'+req.params.id+' </b>'  // html body
     };
@@ -46,6 +46,7 @@ app.get('/sentemail/:email/:id', function(req, res, next) {
         // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
     });
   });
+  // res(alert('รบกวนตรวจสอบ Email:'+req.params.email)); 
   res.redirect('/');
 });
 
