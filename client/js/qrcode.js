@@ -34,7 +34,7 @@ Vue.component('test', {
 			.then(res => res.json())
 			.then(res => {
 				if (res.name){
-					this.name=res.name;
+					this.name=res.Nickname;
 				}
 				
 			});

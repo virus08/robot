@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>INSPINIA | Register</title>
+  <title>Bigbang | Register</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,6 +44,12 @@
               </div>
             </div>
             <div class="form-group">
+                <label class="col-sm-3 control-label" for="Nickname">Nickname</label>
+                <div class="col-sm-9">
+                    <input type="text" id="Nickname" class="form-control" placeholder="Nickname" v-model="cat.Nickname">
+                </div>
+            </div>
+            <div class="form-group">
               <label class="col-sm-3 control-label" for="Email address">Email address</label>
               <div class="col-sm-9">
                 <input type="email" id="Email" class="form-control" placeholder="name@company.com" required v-model="cat.Email">
@@ -55,12 +61,7 @@
                   <input type="text" id="Position" class="form-control" placeholder="Position"  v-model="cat.Position">
               </div>
             </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label" for="Department">Department</label>
-                <div class="col-sm-9">
-                    <input type="text" id="Department" class="form-control" placeholder="Department" v-model="cat.Department">
-                </div>
-            </div>
+            
           </div>
           <div class="col-sm-6">
             <div class="form-group">

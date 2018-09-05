@@ -7,6 +7,7 @@ let catApp = new Vue({
 		tmp:{
 			id:'',
 			name:'',
+			Nickname:'',
 			Email:'',
 			Position:'',
 			Department:'',
@@ -19,6 +20,7 @@ let catApp = new Vue({
 		cat:{
 			id:'',
 			name:'',
+			Nickname:'',
 			Email:'',
 			Position:'',
 			Department:'',
